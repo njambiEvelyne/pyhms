@@ -77,4 +77,12 @@ class Dog(Animal):
     def __init__(self, name, breed):
         super().__init__(name) #Call the constructor of the parent class
         self.breed = breed
+
+    def details(self):
+        print("Dog Name: ", self.name)
+        print("Breed: ", self.breed)
+
+d = Dog("Buddy", "Labrador")
+d.info()  #Inherited method
+d.details()  #Child class method
         
