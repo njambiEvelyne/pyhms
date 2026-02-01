@@ -15,6 +15,7 @@ class cat:
 # Create objects
 cat1 = cat("Buddy", 3)
 cats2 = cat("Charlie", 5)
+
 # Access class and instance variables
 print(cat1.species)  # (Class variable)
 print(cat1.name)     # (Instance variable)
@@ -60,3 +61,20 @@ print(dog.get_age())
 # Modifying private member using setter
 dog.set_age(5)
 print(dog.get_info())
+
+"""
+Inheritance
+"""
+#1. Using the super() method
+class Animal:
+    def __init__(self, name):
+        self.name = name
+    def info(self):
+        print("Animal Name: ", self.name)
+
+#Child class : Dog
+class Dog(Animal):
+    def __init__(self, name, breed):
+        super().__init__(name) #Call the constructor of the parent class
+        self.breed = breed
+        
