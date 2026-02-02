@@ -85,4 +85,17 @@ class Dog(Animal):
 d = Dog("Buddy", "Labrador")
 d.info()  #Inherited method
 d.details()  #Child class method
+
+"""
+Abstract Classes and methods
+"""
+from abc import ABC, abstractmethod
+class Animal(ABC):
+    @abstractmethod
+    def sound(self):
+        pass #Abstract method, no implementation here 
+
+    def move(self):
+        print("Animal is moving") #Concrete method with implementation
+
         
