@@ -114,4 +114,25 @@ class Dog(Animal):
     
 dog = Dog()
 print(dog.species)  # Outputs: Canine
-        
+
+"""
+Gettre and setter methods
+"""
+class Employee:
+
+    def __init__(self):
+        self.__salary = 50000  # Private attribute
+
+    def get_salary(self): #Getter method
+        return self.__salary
+    
+    def set_salary(self, amount): #Setter method
+        if amount >= 0:
+            self.__salary = amount
+        else:
+            print("Invalid salary amount!")
+
+emp = Employee()
+print(emp.get_salary())  # Accessing salary using getter        
+emp.set_salary(60000)    # Modifying salary using setter
+print(emp.get_salary())  # Accessing updated salary using getter
