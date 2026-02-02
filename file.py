@@ -98,4 +98,20 @@ class Animal(ABC):
     def move(self):
         print("Animal is moving") #Concrete method with implementation
 
+""""
+@property decorators
+"""
+class Animal(ABC):
+    @property
+    @abstractmethod
+    def species(self):
+        pass #Abstract property, must be implemented in subclasses
+    
+class Dog(Animal):
+    @property
+    def species(self):
+        return "Canine"
+    
+dog = Dog()
+print(dog.species)  # Outputs: Canine
         
