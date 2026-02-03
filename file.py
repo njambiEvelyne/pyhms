@@ -145,3 +145,19 @@ try:
     res = n/0
 except ZeroDivisionError:
     print("Cannot divide by zero!")
+
+
+"""
+Try, except, else, finally
+"""
+try:
+    n = 0
+    res = 10 / n
+except ZeroDivisionError:
+    print("Cannot divide by zero!")
+except ValueError:
+    print("Invalid value provided!")
+else:
+    print("Result is:", res)
+finally:
+    print("Execution completed.")
