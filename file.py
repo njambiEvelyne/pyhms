@@ -136,3 +136,12 @@ emp = Employee()
 print(emp.get_salary())  # Accessing salary using getter        
 emp.set_salary(60000)    # Modifying salary using setter
 print(emp.get_salary())  # Accessing updated salary using getter
+
+"""
+Exception handling
+"""
+n =10
+try:
+    res = n/0
+except ZeroDivisionError:
+    print("Cannot divide by zero!")
