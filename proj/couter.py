@@ -8,6 +8,6 @@ else:
         if i % 2 == 0:
             total.append(i)
     count = len(total)
-    print(f"There are {count} even numbers in the list.")
+    print(f"There are {count} even numbers in the list."
     
 
