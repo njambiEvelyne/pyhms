@@ -9,5 +9,3 @@ else:
             total.append(i)
     count = len(total)
     print(f"There are {count} even numbers in the list.")
-    
-
