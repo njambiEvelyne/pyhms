@@ -7,6 +7,10 @@ elif grade >= 80:
   print(f"{name} received a B.")  
 elif grade >= 70:
   print(f"{name} received a C.")
+elif grade >= 60:
+  print(f"{name} received a D.")
+else:
+  print(f"{name} received an F.")
 
 
 
