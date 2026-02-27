@@ -1,7 +1,7 @@
 # procurement_system.py
 
 # List to store purchase requests
-
+purchase_requests = []
 
 # Function to add purchase request
 def add_request(request_id, item_name, quantity, department):
